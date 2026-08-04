@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Datasets and generated files (keep the folder, ignore its contents)
+data/*
+!data/.gitkeep
+*.zip
+
+# Auth output - never commit credentials, cookies or tokens
+cookies.txt
+*.token
+.env
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/
