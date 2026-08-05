@@ -12,6 +12,12 @@ data/*
 !data/.gitkeep
 *.zip
 
+# Self-training byproducts. The improved model ships as digit_cnn_light.keras;
+# these are local iterations produced by autotrain.py and should not be committed.
+models/digit_cnn.keras
+models/digit_cnn_v*.keras
+models/*_ORIGINAL.keras
+
 # Auth output - never commit credentials, cookies or tokens
 cookies.txt
 *.token
