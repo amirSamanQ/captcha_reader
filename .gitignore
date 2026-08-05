@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Datasets and generated files (keep the folder, ignore its contents)
+data/*
+!data/.gitkeep
+*.zip
+
+# Self-training byproducts. The improved model ships as digit_cnn_light.keras;
+# these are local iterations produced by autotrain.py and should not be committed.
+models/digit_cnn.keras
+models/digit_cnn_v*.keras
+models/*_ORIGINAL.keras
+
+# Auth output - never commit credentials, cookies or tokens
+cookies.txt
+*.token
+.env
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/

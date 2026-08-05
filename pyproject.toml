@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "captcha_reader"
+version = "0.1.0"
+description = "Read a 5 digit numeric CAPTCHA and log in to a Sahra OMS (ephoenix) account."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "tensorflow>=2.12",
+    "opencv-python>=4.5",
+    "numpy>=1.23",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+# Only needed to collect/label data and train a new model.
+train = [
+    "matplotlib>=3.5",
+    "scikit-learn>=1.1",
+]
+
+[tool.setuptools]
+packages = ["captcha_reader"]
